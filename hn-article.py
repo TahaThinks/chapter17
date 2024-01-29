@@ -35,6 +35,4 @@ for submission_dict in submission_dicts:
     print(f"\nComments: {submission_dict['comments']}")
 
 
-os.system('git add .')
-os.system('git commit -m "Push Automation"')
-os.system('git push -u origin main')
+
