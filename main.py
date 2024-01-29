@@ -16,6 +16,8 @@ print(f"repositories returned: {len(repo_dicts)}")
 
 #Examine the first repository
 repo_dict = repo_dicts[0]
-print(f"\nKeys: {len(repo_dict)}")
-for key in sorted(repo_dict.keys()):
-    print(key)
+print("\n Selected information about the first repository")
+print(f"Name: {repo_dict['name']}")
+print(f"Owner: {repo_dict['owner']['login']}")
+print(f"Stars: {repo_dict['stargazers_count']}")
+print(f"Repository: {repo_dict['html_url']}")
