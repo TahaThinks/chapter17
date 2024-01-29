@@ -1,4 +1,5 @@
 import requests
+import os
 from operator import itemgetter
 
 #Make an API call, and store the response
@@ -32,3 +33,8 @@ for submission_dict in submission_dicts:
     print(f"\nTitle: {submission_dict['title']}")
     print(f"\nDiscussion: {submission_dict['hn_link']}")
     print(f"\nComments: {submission_dict['comments']}")
+
+
+os.system('git add .')
+os.system('git commit -m "Push Automation"')
+os.system('git push -u origin main')
